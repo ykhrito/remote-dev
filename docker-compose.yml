@@ -1,0 +1,19 @@
+version: "3"
+services:
+  web:
+    image: circleci/ruby:2.6.3-node-browsers
+    working_dir: /home/circleci/remote-dev
+    command: sleep infinity
+    ports:
+      - 3000:3000
+    links:
+      - mysql
+    volumes:
+      - ./:/home/circleci/remote-dev
+    environment:
+      PORT: 3000
+      DATABASE_HOST: mysql
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
