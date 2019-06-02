@@ -3,4 +3,5 @@ services:
   web:
     volumes:
       - ~/.gitconfig:/home/circleci/.gitconfig
+      - ~/.ssh:/home/circleci/.ssh
       - ./.root:/root
