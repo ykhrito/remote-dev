@@ -67,4 +67,4 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 
-
+.root/
