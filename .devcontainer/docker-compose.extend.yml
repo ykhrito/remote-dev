@@ -1,7 +1,8 @@
 version: "3"
 services:
   web:
+    environment:
+      - HOME=/home/circleci
     volumes:
       - ~/.gitconfig:/home/circleci/.gitconfig
       - ~/.ssh:/home/circleci/.ssh
-      - ./.root:/root
