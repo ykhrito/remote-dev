@@ -12,5 +12,11 @@
 		"castwide.solargraph",
 		"robinbentley.sass-indented"
 	],
+	"settings": {
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
 	"shutdownAction": "none" // or "stopCompose"
 }
